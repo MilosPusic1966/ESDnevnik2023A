@@ -45,5 +45,19 @@ namespace ESDnevnik2023A
             Sifarnik predmet = new Sifarnik("skolska_godina");
             predmet.ShowDialog();
         }
+
+        private void Glavna_Load(object sender, EventArgs e)
+        {
+            if (Program.user_prava < 2)
+            {
+                osobaToolStripMenuItem1.Enabled = false;
+            }
+            
+        }
+
+        private void Glavna_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

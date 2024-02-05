@@ -70,21 +70,21 @@
             // osobaToolStripMenuItem1
             // 
             this.osobaToolStripMenuItem1.Name = "osobaToolStripMenuItem1";
-            this.osobaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.osobaToolStripMenuItem1.Size = new System.Drawing.Size(126, 22);
             this.osobaToolStripMenuItem1.Text = "Osoba";
             this.osobaToolStripMenuItem1.Click += new System.EventHandler(this.osobaToolStripMenuItem1_Click);
             // 
             // skGodinaToolStripMenuItem
             // 
             this.skGodinaToolStripMenuItem.Name = "skGodinaToolStripMenuItem";
-            this.skGodinaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.skGodinaToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.skGodinaToolStripMenuItem.Text = "Sk godina";
             this.skGodinaToolStripMenuItem.Click += new System.EventHandler(this.skGodinaToolStripMenuItem_Click);
             // 
             // predmetToolStripMenuItem
             // 
             this.predmetToolStripMenuItem.Name = "predmetToolStripMenuItem";
-            this.predmetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.predmetToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.predmetToolStripMenuItem.Text = "Predmet";
             this.predmetToolStripMenuItem.Click += new System.EventHandler(this.predmetToolStripMenuItem_Click);
             // 
@@ -101,20 +101,20 @@
             // upisnicaToolStripMenuItem
             // 
             this.upisnicaToolStripMenuItem.Name = "upisnicaToolStripMenuItem";
-            this.upisnicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.upisnicaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.upisnicaToolStripMenuItem.Text = "Upisnica";
             // 
             // raspodelaToolStripMenuItem
             // 
             this.raspodelaToolStripMenuItem.Name = "raspodelaToolStripMenuItem";
-            this.raspodelaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.raspodelaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.raspodelaToolStripMenuItem.Text = "Raspodela";
             this.raspodelaToolStripMenuItem.Click += new System.EventHandler(this.raspodelaToolStripMenuItem_Click);
             // 
             // ocenaToolStripMenuItem
             // 
             this.ocenaToolStripMenuItem.Name = "ocenaToolStripMenuItem";
-            this.ocenaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ocenaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.ocenaToolStripMenuItem.Text = "Ocena";
             // 
             // izvestajiToolStripMenuItem
@@ -130,19 +130,19 @@
             // poOdeljenjuToolStripMenuItem
             // 
             this.poOdeljenjuToolStripMenuItem.Name = "poOdeljenjuToolStripMenuItem";
-            this.poOdeljenjuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.poOdeljenjuToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.poOdeljenjuToolStripMenuItem.Text = "Po odeljenju";
             // 
             // poProfesoruToolStripMenuItem
             // 
             this.poProfesoruToolStripMenuItem.Name = "poProfesoruToolStripMenuItem";
-            this.poProfesoruToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.poProfesoruToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.poProfesoruToolStripMenuItem.Text = "Po profesoru";
             // 
             // poGodiniToolStripMenuItem
             // 
             this.poGodiniToolStripMenuItem.Name = "poGodiniToolStripMenuItem";
-            this.poGodiniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.poGodiniToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.poGodiniToolStripMenuItem.Text = "Po godini";
             // 
             // Glavna
@@ -154,6 +154,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Glavna";
             this.Text = "Glavna";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Glavna_FormClosed);
+            this.Load += new System.EventHandler(this.Glavna_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -8,6 +8,7 @@ namespace ESDnevnik2023A
 {
     internal static class Program
     {
+        static public int user_prava = 0;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace ESDnevnik2023A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Glavna());
+            Application.Run(new Login());
         }
     }
 }
