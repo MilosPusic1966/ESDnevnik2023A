@@ -50,6 +50,7 @@ namespace ESDnevnik2023A
         {
             if (Program.user_prava < 2)
             {
+                // moze horizontalni meni, samo onda nema broj
                 osobaToolStripMenuItem1.Enabled = false;
             }
             
