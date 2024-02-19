@@ -101,20 +101,21 @@
             // upisnicaToolStripMenuItem
             // 
             this.upisnicaToolStripMenuItem.Name = "upisnicaToolStripMenuItem";
-            this.upisnicaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.upisnicaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.upisnicaToolStripMenuItem.Text = "Upisnica";
+            this.upisnicaToolStripMenuItem.Click += new System.EventHandler(this.upisnicaToolStripMenuItem_Click);
             // 
             // raspodelaToolStripMenuItem
             // 
             this.raspodelaToolStripMenuItem.Name = "raspodelaToolStripMenuItem";
-            this.raspodelaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.raspodelaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.raspodelaToolStripMenuItem.Text = "Raspodela";
             this.raspodelaToolStripMenuItem.Click += new System.EventHandler(this.raspodelaToolStripMenuItem_Click);
             // 
             // ocenaToolStripMenuItem
             // 
             this.ocenaToolStripMenuItem.Name = "ocenaToolStripMenuItem";
-            this.ocenaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.ocenaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ocenaToolStripMenuItem.Text = "Ocena";
             // 
             // izvestajiToolStripMenuItem

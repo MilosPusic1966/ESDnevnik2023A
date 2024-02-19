@@ -60,5 +60,11 @@ namespace ESDnevnik2023A
         {
             Application.Exit();
         }
+
+        private void upisnicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Upisnica forma = new Upisnica();
+            forma.ShowDialog();
+        }
     }
 }
