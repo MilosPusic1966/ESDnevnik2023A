@@ -21,6 +21,11 @@ namespace ESDnevnik2023A
             ComboLoad();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
         int br_reda;
         public raspodela()
         {
@@ -55,7 +60,6 @@ namespace ESDnevnik2023A
             comboBox2.ValueMember = "id";
             comboBox2.DisplayMember = "naziv";
             
-
 
             dtOdeljenje =new DataTable();
             adapter = new SqlDataAdapter("Select id, STR(Odeljenje.razred)+'-'+Odeljenje.indeks AS naziv from Odeljenje", veza);

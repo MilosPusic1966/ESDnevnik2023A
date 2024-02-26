@@ -14,7 +14,7 @@ namespace ESDnevnik2023A
     public partial class Upisnica : Form
     {
         DataTable dtOsoba, dtUpisnica, dtOdeljenje;
-
+        int broj_sloga;
         public Upisnica()
         {
             InitializeComponent();
@@ -49,6 +49,35 @@ namespace ESDnevnik2023A
             dataGridView1.DataSource = dtUpisnica;
             dataGridView1.AllowUserToAddRows = false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // insert into upisnica values(3, 5)
+            string naredba = "INSERT INTO upisnica VALUES(";
+            naredba = naredba +comboBox2.SelectedValue.ToString();
+            naredba = naredba + ", ";
+            naredba = naredba + comboBox1.SelectedValue.ToString();
+            naredba = naredba + ")";
+            SqlConnection veza = konekcija.vrati_vezu();
+            SqlCommand ins_naredba = new SqlCommand(naredba, veza);
+            veza.Open();
+            ins_naredba.ExecuteNonQuery();
+            veza.Close();
+            popuni_grid();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string id_brisi = dataGridView1.Rows[broj_sloga].Cells["id"].Value.ToString();
+            SqlConnection veza = konekcija.vrati_vezu();
+            string naredba = "DELETE FROM upisnica WHERE id=" + id_brisi;
+            SqlCommand ins_naredba = new SqlCommand(naredba, veza);
+            veza.Open();
+            ins_naredba.ExecuteNonQuery();
+            veza.Close();
+            popuni_grid();
+        }
+
         private void Upisnica_Load(object sender, EventArgs e)
         {
             popuni_odeljenje();
@@ -60,7 +89,7 @@ namespace ESDnevnik2023A
         {
             if (dataGridView1.CurrentRow != null)
             {
-                int broj_sloga = dataGridView1.CurrentRow.Index;
+                broj_sloga = dataGridView1.CurrentRow.Index;
                 if (dtUpisnica.Rows.Count != 0 && broj_sloga >=0)
                 {
                     comboBox1.SelectedValue = dataGridView1.Rows[broj_sloga].Cells["odeljenje_id"].Value.ToString();
